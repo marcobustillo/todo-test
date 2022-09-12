@@ -2,7 +2,7 @@ FROM node:16-slim
 
 WORKDIR /app
 
-COPY . .
+COPY ./client .
 
 RUN npm run build
 
