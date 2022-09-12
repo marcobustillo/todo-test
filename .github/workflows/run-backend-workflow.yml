@@ -1,4 +1,4 @@
-name: React project CI/CD
+name: NodeJS project CI/CD
 
 on:
   push:
