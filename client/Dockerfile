@@ -2,7 +2,11 @@ FROM node:16-slim
 
 WORKDIR /app
 
-COPY . .
+COPY .package*.json ./
+
+RUN npm install --silent
+
+COPY . ./
 
 RUN npm run build
 
