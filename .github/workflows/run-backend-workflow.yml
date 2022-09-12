@@ -1,0 +1,12 @@
+name: React project CI/CD
+
+on:
+  push:
+    paths:
+      - 'server/**'
+
+jobs:
+  Back-End-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Running back end bullshit"
