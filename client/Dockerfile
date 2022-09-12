@@ -2,11 +2,11 @@ FROM node:16-slim
 
 WORKDIR /app
 
-COPY package*.json ./
+COPY /client/package*.json ./
 
 RUN npx yarn install
 
-COPY . ./
+COPY /client ./
 
 RUN npm run build
 
