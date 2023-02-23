@@ -8,7 +8,7 @@ RUN npx yarn install
 
 COPY /client ./
 
-RUN npm run build
+RUN yarn run build
 
 ENV NODE_ENV production
 

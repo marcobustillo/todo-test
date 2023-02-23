@@ -8,10 +8,10 @@ RUN npx yarn install
 
 COPY /server ./
 
-RUN npm run build
+RUN yarn run build
 
 ENV NODE_ENV production
 
 EXPOSE 3000
 
-CMD [ "npm", "start"]
+CMD [ "yarn", "start"]
