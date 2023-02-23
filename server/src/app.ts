@@ -12,7 +12,6 @@ app.use(express.json())
 app.use(express.urlencoded())
 app.use(todoRoutes)
 
-
 const uri: string = `mongodb+srv://test:testuser@cluster0.vcwfp.mongodb.net/?retryWrites=true&w=majority`
 
 mongoose
